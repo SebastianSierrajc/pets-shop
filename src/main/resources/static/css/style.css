@@ -1,0 +1,34 @@
+.list-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-item {
+    margin-bottom: 2rem;
+}
+
+.anchor-btn {
+    width: 250px;
+}
+
+.table-container{
+    margin-bottom: 2rem;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.add-btn{
+    align-self: end;
+}
+
+.form-container-form{
+    width: 100%;
+}
+
+#pet_id {
+    display: none;
+}

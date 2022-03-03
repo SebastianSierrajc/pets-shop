@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pets table</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <main class="container">
+        <div class="section row title-container">
+            <h1 class="center-align">Pets table</h1>
+        </div>
+        <div class="section form-section">
+            <button id="add-btn" type="button" class="btn-floating btn-large waves-effect waves-light red">
+                <i class="material-icons">add</i>
+            </button>
+            <div id="form-container" class="form-container-form row">
+                <form id="form" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="pet_name" name="name" type="text" class="validate">
+                            <label for="pet_name">Pet name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="pet_owner" name="owner" type="text" class="validate">
+                            <label for="pet_owner">Pet owner</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select id="pet_type" name="type">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="Dog">Dog</option>
+                                <option value="Cat">Cat</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <label>Pet type</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="pet_race" name="race" type="text" class="validate">
+                            <label for="pet_race">Pet race</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="pet_age" name="age" type="number" class="validate">
+                            <label for="pet_age">Pet age</label>
+                        </div>
+                    </div>
+                    <button id="submit-btn" class="btn waves-effect waves-light" type="button" name="submit-btn">
+                        ADD PET
+                        <i class="material-icons right">send</i>
+                    </button>
+                    <button id="edit-btn" class="btn waves-effect waves-light" type="button" name="edit-btn">
+                        EDIT
+                        <i class="material-icons right">edit</i>
+                    </button>
+                    <button id="cancel-btn" class="btn waves-effect waves-light" type="button" name="edit-btn">
+                        CANCEL
+                        <i class="material-icons right">cancel</i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        </div>
+        <div class="section table-container">
+            <table class="striped pets-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Owner</th>
+                        <th>Type</th>
+                        <th>Race</th>
+                        <th>Age</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tbody" class="table-data">
+                </tbody>
+            </table>
+
+        </div>
+        <ul class="list-table">
+            <li class="list-item">
+                <a class="anchor-btn waves-effect waves-light btn-large" href="/">
+                    <i class="large material-icons left">home</i>
+                    Go Home
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
